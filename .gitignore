@@ -1,20 +1,21 @@
-# 1. ARCHIVOS DE CREDENCIALES Y CONFIGURACIÓN LOCAL
-# Bloquea cualquier archivo donde guardes contraseñas de la base de datos
+## This is used just as reference just in case these is needed.
+# 1.CREDENTIAL AND LOCAL CONFIGURATION FILES
+# Block any file where you store database passwords
 .env
 config.sql
 credentials.txt
 secrets.json
 
-# 2. RESPALDOS Y VOLCADOS DE BASES DE DATOS (BACKUPS)
-# Evita subir tablas gigantescas o datos reales de clientes/usuarios
+# 2. DATABASE BACKUPS AND DUMPS
+# Avoid uploading massive tables or real customer/user data
 *.sql.gz
 *.sql.tar
 backup_*.sql
 dump.sql
 *backup*.sql
 
-# 3. ARCHIVOS TEMPORALES Y DE CONFIGURACIÓN DE VSCODE
-# Evita subir carpetas propias de tu editor de texto o sistema operativo
+# 3.VS Code temporary and configuration files
+# Avoid uploading folders specific to your text editor or operating system
 .vscode/
 .DS_Store
 Thumbs.db
